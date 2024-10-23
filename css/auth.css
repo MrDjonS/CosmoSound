@@ -67,3 +67,26 @@
         max-width: 90%; 
     }
 }
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto; /* Сохраняет пропорции */
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        width: 70px; /* Уменьшенный размер для маленьких экранов */
+    }
+}
+
+@media (max-width: 400px) {
+    .logo img {
+        width: 50px; /* Ещё меньше для очень маленьких экранов */
+    }
+}
