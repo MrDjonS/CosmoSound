@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/images/fon.jpg'); /* Замените 'background.jpg' на путь к вашему фоновому изображению */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон для навигации */
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px; /* Высота логотипа */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #007bff; /* Цвет ссылок */
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9); /* Полупрозрачный фон для контента */
+    border: 2px solid #007bff; /* Цвет рамки */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007bff; /* Цвет заголовка */
+}
+
+p {
+    line-height: 1.6;
+    color: #333333; /* Цвет текста */
+}

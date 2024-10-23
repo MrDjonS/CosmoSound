@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <!-- Логотип -->
+            <div class="logo">
+                <img src="/images/Screenshot_1.png" alt="Planet Audio Logo">
+            </div>
+
+            <!-- Форма регистрации -->
+            <form id="registerForm">
+                <h2>Register</h2>
+
+                <!-- Поле для ввода email -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <!-- Поле для ввода пароля -->
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <!-- Поле для повторного ввода пароля -->
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+
+                <!-- Поле "Запомнить меня" -->
+                <label for="remember">
+                    <input type="checkbox" id="remember" name="remember">
+                    Remember Me
+                </label>
+
+                <!-- Кнопка регистрации -->
+                <button type="submit">Register</button>
+            </form>
+
+            <!-- Ссылка на страницу логина -->
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
