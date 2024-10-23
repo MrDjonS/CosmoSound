@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-background-image: url('https://username.github.io/repository-name/images/fon.jpg');
+ background-image: url('../images/fon.jpg');
 
     background-size: cover;
     background-attachment: fixed;
