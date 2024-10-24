@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../images/fon.jpg'); /* Замените 'background.jpg' на путь к вашему фоновому изображению */
+    background-image: url('../images/fon.jpg');
     background-size: cover;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон для навигации */
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px 20px;
 }
 
@@ -18,7 +18,7 @@ header {
 }
 
 .logo {
-    height: 50px; /* Высота логотипа */
+    height: 50px;
 }
 
 nav {
@@ -28,7 +28,7 @@ nav {
 nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: #007bff; /* Цвет ссылок */
+    color: #007bff;
     font-weight: bold;
 }
 
@@ -36,18 +36,74 @@ nav a {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.9); /* Полупрозрачный фон для контента */
-    border: 2px solid #007bff; /* Цвет рамки */
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 2px solid #007bff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #007bff; /* Цвет заголовка */
+    color: #007bff;
 }
 
 p {
     line-height: 1.6;
-    color: #333333; /* Цвет текста */
+    color: #333333;
+}
+
+/* Медиазапросы для мобильной версии */
+
+/* Для экранов шириной до 768px (планшеты и небольшие экраны) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Меняет расположение навигации на вертикальное */
+    }
+
+    nav a {
+        margin: 10px 0; /* Увеличивает отступы между ссылками */
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 90%; /* Контейнер будет занимать 90% ширины экрана */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Увеличивает размер шрифта заголовка */
+    }
+
+    p {
+        font-size: 1em; /* Изменяет размер шрифта для лучшей читаемости */
+    }
+}
+
+/* Для экранов шириной до 480px (смартфоны) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center; /* Центрирует элементы навигации */
+    }
+
+    .logo {
+        height: 40px; /* Уменьшает размер логотипа */
+    }
+
+    nav a {
+        margin: 5px 0; /* Уменьшает отступы между ссылками */
+        font-size: 0.9em; /* Уменьшает размер шрифта ссылок */
+    }
+
+    .container {
+        padding: 10px;
+        max-width: 95%; /* Контейнер будет занимать 95% ширины экрана */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Уменьшает размер заголовка для маленьких экранов */
+    }
+
+    p {
+        font-size: 0.9em; /* Уменьшает размер шрифта для текста */
+    }
 }
