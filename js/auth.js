@@ -30,7 +30,7 @@ if (registerForm) {
         }
 
         alert('Пользователь зарегистрирован!');
-        window.location.href = './index.html'; // Перенаправление на страницу логина
+        window.location.href = 'index.html'; // Перенаправление на страницу логина
     });
 }
 
@@ -149,6 +149,6 @@ if (logoutButton) {
         localStorage.removeItem('isLoggedIn'); // Удаляем флаг авторизации
         localStorage.removeItem('userEmail'); // Удаляем email
         alert('Вы вышли из системы.');
-        window.location.href = 'login.html'; // Перенаправление на страницу логина
+        window.location.href = 'register.html'; // Перенаправление на страницу логина
     });
 }
